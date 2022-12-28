@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700;800&family=Roboto+Mono:wght@700&display=swap");
+
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  min-width: 100vw;
+  background: #e5e5e5;
+  font-family: "Roboto Mono", monospace;
+}
+
+.wrapper {
+  width: 765px;
+  padding-top: 55px;
+  background: #ffffff;
+  box-shadow: 0px 0px 44px rgba(148, 146, 120, 0.23);
+  border-radius: 20px;
+}
+
+.tip-amount {
+  padding-bottom: 35px;
+  margin-bottom: 35px;
+  border-bottom: 1px solid #dedede;
+}
+
+.total-per-person {
+  padding-bottom: 35px;
+}
+
+.tip-amount,
+.total-per-person {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+  width: 100%;
+}
+
+.dollars {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  color: #333333;
+}
+
+.tip-amount .dollars,
+.total-per-person .dollars {
+  font-size: 82px;
+}
+
+.tip-amount sup,
+.total-per-person sup {
+  font-weight: 800;
+  font-size: 53px;
+}
+
+.input-fields {
+  padding: 0 35px;
+  display: flex;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background: #f7f7f7;
+}
+
+.bill-amount {
+  padding: 65px 45px 45px;
+  border-right: 1px solid #dedede;
+  width: 70%;
+}
+
+.number-of-people {
+  padding: 65px 45px 45px;
+  width: 30%;
+}
+
+input[type="text"] {
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 5px;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 62px;
+  color: #333333;
+  border: none;
+  background: none;
+  outline: none;
+  border-bottom: 3px dashed #b3b3b3;
+}
+
+.bill-amount input[type="text"] {
+  background: url(../images/dollar.svg) left 15px no-repeat;
+  padding-left: 40px;
+}
+
+.number-of-people input[type="text"] {
+  background: url(../images/people.svg) left 20px no-repeat;
+  padding-left: 40px;
+  text-align: right;
+}
+
+.bill-amount .label,
+.number-of-people .label {
+  text-align: center;
+}
+
+.tip-percentages {
+  padding: 20px 35px;
+  display: flex;
+  justify-content: space-between;
+  background: #eeeeee;
+  border-top: 1px solid #dedede;
+  border-bottom: 1px solid #dedede;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"] + label {
+  width: 135px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 24px;
+  color: #60c1b6;
+  background: #ffffff;
+  box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+input[type="radio"]:checked + label {
+  color: #ffffff;
+  background: #60c1b6;
+}
+
+.button-wrapper {
+  text-align: right;
+  padding: 30px 35px;
+}
+
+.btn {
+  padding: 20px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 700;
+  font-size: 24px;
+  color: #ffffff;
+  background: #ed7861;
+  box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+  border: none;
+  cursor: pointer;
+  margin-left: auto;
+}
