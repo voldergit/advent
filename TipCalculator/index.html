@@ -11,19 +11,22 @@
     <div class="wrapper">
       <div class="tip-amount">
         <div class="label">Tip Amount</div>
-        <div class="dollars"><sup>$</sup>4.02</div>
+        <div class="dollars"><sup>$</sup><span id="tip-amount">0</span></div>
       </div>
       <div class="total-per-person">
         <div class="label">Total Per Person</div>
-        <div class="dollars"><sup>$</sup>12.02</div>
+        <div class="dollars">
+          <sup>$</sup><span id="total-per-person">0</span>
+        </div>
       </div>
       <div class="input-fields">
         <div class="bill-amount">
           <div class="field">
             <input
               type="text"
+              id="bill-amount"
               name="bill-amount"
-              value="102.02"
+              value=""
               maxlength="7"
             />
           </div>
@@ -33,8 +36,9 @@
           <div class="field">
             <input
               type="text"
+              id="number-of-people"
               name="number-of-people"
-              value="3"
+              value=""
               maxlength="2"
             />
           </div>
@@ -60,7 +64,7 @@
         </div>
       </div>
       <div class="button-wrapper">
-        <button class="btn">Calculate</button>
+        <button class="btn" id="calculate">Calculate</button>
       </div>
     </div>
     <script src="js/main.js"></script>
